@@ -88,7 +88,7 @@ export default {
 
   mounted() {
     this.editor = new Editor({
-      content: '<p>I’m running Tiptap with Vue.js. 🎉</p>',
+      content: '<p>I’m running Tiptap with Vue.js. 🎉</p>', // нужно будет передать json который будет приходить с бэка. { content:Array,type:String }
       extensions: [
         StarterKit,
       ],
@@ -101,7 +101,7 @@ export default {
 
   methods: {
     getJSON() {
-      console.log(this.editor.getJSON())
+      console.log(this.editor.getJSON())// вызываем и отправляем результат на бэк
     },
     getHTML() {
       console.log(this.editor.getHTML())
