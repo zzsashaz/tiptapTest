@@ -88,7 +88,7 @@ export default {
 
   mounted() {
     this.editor = new Editor({
-      content: , // нужно будет передать json который будет приходить с бэка. { content:Array,type:String }
+      content: '<p>I’m running Tiptap with Vue.js. 🎉</p>', // нужно будет передать json который будет приходить с бэка. { content:Array,type:String }
       extensions: [
         StarterKit,
       ],
